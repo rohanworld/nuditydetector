@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Nudity Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Nudity Detection</h1>
+        <p>
+            This is a nudity detector which detects nudity in images using a pre-trained model and rates the image on a
+            scale of 1(Least) - 5(Most).
+        </p>
+        <form onsubmit="return false;">
+            <input type="text" name="domain" autofocus placeholder="Enter Image Link(URL)">
+            <input type="submit" onclick="ok()" value="Check">
+        </form> <br>
+        <div class="imageIdhu">
+        </div> <br>
+        <div class="result">
+        </div>
+
+    </div>
+    <script src="logic.js"></script>
+</body>
+
+</html>
